@@ -28,9 +28,9 @@ class EducationMapper(BaseEstimator, TransformerMixin):
 
 
 # Load necessary components
-numerical_columns = pickle.load(open('columns_to_be_kept_numerical.pkl', 'rb'))
-column_transformer = pickle.load(open('column_transformer.pkl', 'rb'))
-model = pickle.load(open('model.pkl', 'rb'))
+numerical_columns = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/columns_to_be_kept_numerical.pkl', 'rb'))
+column_transformer = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/column_transformer.pkl', 'rb'))
+model = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/model.pkl', 'rb'))
 cat_columns = ['MARITALSTATUS', 'GENDER', 'last_prod_enq2', 'first_prod_enq2']
 
 # Set the title and description for the app
