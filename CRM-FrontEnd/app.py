@@ -31,11 +31,15 @@ class EducationMapper(BaseEstimator, TransformerMixin):
 
 
 # Load necessary components
-file_path = os.path.join(os.path.dirname(__file__), 'columns_to_be_kept_numerical.pkl')
-numerical_columns = pickle.load(open(file_path, 'rb'))
+file_path1  = os.path.join(os.path.dirname(__file__), 'columns_to_be_kept_numerical.pkl')
+file_path2 = os.path.join(os.path.dirname(__file__), 'column_transformer.pkl')
+file_path3 = os.path.join(os.path.dirname(__file__), 'model.pkl')
+numerical_columns = pickle.load(open(file_path1, 'rb'))
+column_transformer = pickle.load(open(file_path2, 'rb'))
+model
 # numerical_columns = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/columns_to_be_kept_numerical.pkl', 'rb'))
-column_transformer = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/column_transformer.pkl', 'rb'))
-model = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/model.pkl', 'rb'))
+# column_transformer = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/column_transformer.pkl', 'rb'))
+# model = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/model.pkl', 'rb'))
 cat_columns = ['MARITALSTATUS', 'GENDER', 'last_prod_enq2', 'first_prod_enq2']
 
 # Set the title and description for the app
