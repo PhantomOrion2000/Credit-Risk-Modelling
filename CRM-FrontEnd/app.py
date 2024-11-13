@@ -36,7 +36,7 @@ file_path2 = os.path.join(os.path.dirname(__file__), 'column_transformer.pkl')
 file_path3 = os.path.join(os.path.dirname(__file__), 'model.pkl')
 numerical_columns = pickle.load(open(file_path1, 'rb'))
 column_transformer = pickle.load(open(file_path2, 'rb'))
-model
+model = pickle.load(open(file_path3, 'rb'))
 # numerical_columns = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/columns_to_be_kept_numerical.pkl', 'rb'))
 # column_transformer = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/column_transformer.pkl', 'rb'))
 # model = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/model.pkl', 'rb'))
