@@ -4,6 +4,9 @@ import pickle
 import io
 from sklearn.base import BaseEstimator, TransformerMixin
 import xgboost
+import os
+
+
 
 
 # Define the custom transformer class for education mapping
@@ -28,7 +31,9 @@ class EducationMapper(BaseEstimator, TransformerMixin):
 
 
 # Load necessary components
-numerical_columns = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/columns_to_be_kept_numerical.pkl', 'rb'))
+file_path = os.path.join(os.path.dirname(__file__), 'columns_to_be_kept_numerical.pkl')
+numerical_columns = pickle.load(open(file_path, 'rb'))
+# numerical_columns = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/columns_to_be_kept_numerical.pkl', 'rb'))
 column_transformer = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/column_transformer.pkl', 'rb'))
 model = pickle.load(open('/Users/subhadeepchoudhury/Desktop/Projects/credit risk modelling/CRM-FrontEnd/model.pkl', 'rb'))
 cat_columns = ['MARITALSTATUS', 'GENDER', 'last_prod_enq2', 'first_prod_enq2']
