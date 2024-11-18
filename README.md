@@ -17,7 +17,6 @@ This project focuses on predicting credit risk using machine learning techniques
 ### Explanation of Key Items:
 - **`.idea/`**: Folder for IDE-specific configuration files (should be ignored in `.gitignore` if committing to version control).
 - **`.gitignore`**: Defines files and folders to exclude from version control (e.g., `.idea`, `.DS_Store`, `.pkl` files).
-- **`Procfile`**: Required by Heroku to specify how the app should run.
 - **`.pkl` Files**: Saved artifacts for transformers, numeric columns, and the machine learning model.
 - **`.ipynb` Files**:
   - `CRM.ipynb`: Likely contains analysis or workflows for CRM-specific tasks.
