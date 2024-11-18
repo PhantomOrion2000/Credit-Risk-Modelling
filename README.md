@@ -13,4 +13,49 @@ This project focuses on predicting credit risk using machine learning techniques
 ---
 
 ## 📂 Project Structure
-├── data/ # Dataset files ├── notebooks/ # Jupyter notebooks for exploration and prototyping ├── src/ # Core Python scripts for preprocessing, modeling, and evaluation ├── app/ # Streamlit app files ├── requirements.txt # Dependencies for the project └── README.md # Project documentation
+
+
+---
+
+## ⚙️ Tools & Technologies
+- **Languages**: Python
+- **Libraries**: Pandas, NumPy, Scikit-learn, XGBoost, Streamlit
+- **Deployment**: Streamlit Cloud
+
+---
+
+## 📊 Data Preprocessing
+- **Handling Missing Values**: Replaced with suitable measures.
+- **Categorical Encoding**: Custom mapping for educational qualifications and one-hot encoding for other features.
+- **Feature Scaling**: Standardized numerical features for model input compatibility.
+- **Train-Test Split**: Ensured balanced datasets for training and evaluation.
+
+---
+
+## 🧠 Modeling
+- **Model**: XGBoost
+- **Performance Metrics**: Evaluated using precision, recall, and F1-score to handle class imbalance effectively.
+- **Feature Importance**: Identified key predictors using SHAP analysis.
+
+---
+
+## 🖥️ Deployment
+The project is deployed using **Streamlit Cloud**, offering:
+- **Prediction Input**: Users can input features to get predictions on credit risk.
+- **Model Insights**: Visualizations to understand model performance and feature contributions.
+
+---
+
+## 📝 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PhantomOrion2000/Credit-Risk-Modelling.git
+2. Navigate to the project directory:
+   ```bash
+   cd Credit-Risk-Modelling
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+4. Run the Streamlit app:
+   ```bash
+   streamlit run app/app.py
